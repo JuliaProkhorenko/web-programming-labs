@@ -51,6 +51,24 @@
             .d {
                 position: relative;
             }
+            .e {
+                width: 300px;
+                height: 100px;
+                border: 3px solid #DC143C;
+                background-color: #F08080;
+                color: #800000;
+                text-align: center;
+                line-height: 100px;
+            }
+            .e:hover {
+                background-clip: content-box;
+                background-color: #6495ED;
+                color: #0000FF;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 30px;
+                z-index: 1;
+            }
+            
         </style>
     </head>
     <body>
@@ -83,7 +101,7 @@
 
             <h1>Absolute</h1>
             <div>На третье в ночь. Проснувшись рано,</div>
-            <did>В окно увидела Татьяна</did>
+            <div>В окно увидела Татьяна</div>
             <div style="position: absolute; left: 200px; top: 100px;">Поутру побелевший двор,</div>
             <div>Куртины, кровли и забор,</div>
 
@@ -96,8 +114,15 @@
                 Зимы блистательным ковром.<br>
                 Все ярко, все бело кругом.
             </div>
-        </div>
 
+            <h1>Лесенка</h1>
+            <div class="e" style="position: relative; left: 10px;">Блок А</div>
+            <div class="e" style="position: relative; top: -20px; left: 30px;">Блок Б</div>
+            <div class="e" style="position: relative; top: -40px; left: 50px;">Блок В</div>
+            <div class="e" style="position: relative; top: -60px; left: 70px;">Блок Г</div>
+            <div class="e" style="position: relative; top: -80px; left: 90px;">Блок Д</div>
+        </div>
+    
         <div class="footer">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022
         </div>
