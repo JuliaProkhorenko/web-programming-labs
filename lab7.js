@@ -46,3 +46,19 @@ function makeStairs() {
         steps[i].innerHTML = 'Блок номер ' + Number(i+1);
     }
 }
+function makeSnowflakes() {
+    let snowfall = document.querySelector('#snowfall');
+    let stepCount = 50;
+    for (let i = 0; i<stepCount; i++) {
+        snowfall.innerHTML += '<img class="snowflakes" src="https://galerey-room.ru/images/093014_1419402614.png">';
+    }
+    let snowflakes = document.querySelectorAll('.snowflakes');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
+
+    for (let i = 0; i<snowflakes.length; i++) {
+    snowflakes[i].style.left = Math.random() * (screenWidth-50) + 'px';
+    snowflakes[i].style.top = Math.random() * (screenHeight-50) + 'px';
+    snowflakes[i].style.width = Math.random() * 100 + 'px';
+    }
+}
