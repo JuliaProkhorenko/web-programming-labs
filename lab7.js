@@ -62,3 +62,10 @@ function makeSnowflakes() {
     snowflakes[i].style.width = Math.random() * 100 + 'px';
     }
 }
+function makeMultiplication() {
+    let tab = document.getElementById('multiplication');
+    let tabCount = 9;
+    for(let i = 1; i<=tabCount; i++) {
+    tab.innerHTML += `<div class="table-item">${i} * 30 = ${30*i}</div>`;
+    }
+}
