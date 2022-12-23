@@ -11,12 +11,20 @@ function clickButton(button) {
         button.innerHTML = 'Имя';
 }
 function clickAction(button) {
-    if(button.innerHTML == 'Нажми меня')
+    if (button.innerHTML == 'Нажми меня') {
         button.innerHTML = 'Ещё раз нажми';
-    else if(button.innerHTML == 'Ещё раз нажми')
-            button.innerHTML = 'Ещё';
-    else if(button.innerHTML == 'Ещё')
-            button.innerHTML = 'Начать сначала';
-    else
-        button.innerHTML = 'Нажми меня';      
+        button.style.color = 'IndianRed';
+    }
+    else if (button.innerHTML == 'Ещё раз нажми') {
+        button.innerHTML = 'Ещё';
+        button.style.color = 'SteelBlue';
+    }  
+    else if (button.innerHTML == 'Ещё') {
+        button.innerHTML = 'Начать сначала';
+           button.style.color = 'BlueViolet'; 
+        }
+    else {
+        button.innerHTML = 'Нажми меня';
+        button.style.color = 'MediumAquamarine';
+    }   
 }
