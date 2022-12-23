@@ -25,3 +25,10 @@ body {
     left: 0;
     right: 0;
 }
+.today {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:#C71585;
+    padding-left: 30px;
+}
