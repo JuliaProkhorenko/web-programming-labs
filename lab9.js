@@ -4,3 +4,9 @@ function clickMe(button) {
     else
         button.innerHTML = 'Щелчок';
 }
+function clickButton(button) {
+    if(button.innerHTML == 'Имя')
+        button.innerHTML = 'Фамилия';
+    else
+        button.innerHTML = 'Имя';
+}
